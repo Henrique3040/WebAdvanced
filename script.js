@@ -5,13 +5,21 @@
 window.onload = (event) => {
   console.log("page is fully loaded");
 
-  const name = prompt("Geef een naam in");
-  const age = prompt("Geef u leeftijd")
+  let name = localStorage.getItem("name");
+  let age = localStorage.getItem("age");
 
-  localStorage.setItem(age, name);
+  
+  if (!name || !age) {
+      name = prompt("Geef een naam in");
+      age = prompt("Geef u leeftijd");
+
+      
+      localStorage.setItem("name", name);
+      localStorage.setItem("age", age);
+  }
 
 
-  var myData = localStorage.getItem(age);
+  var myData = localStorage.getItem("name");
 
 
   // een asyc functie die zich zel excuteert
