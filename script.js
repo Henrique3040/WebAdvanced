@@ -73,7 +73,7 @@ window.onload = (event) => {
           ? data.sprites.front_default
           : "";
 
-      pokemonDataContainer.innerHTML += `
+      pokemonDataContainer.innerHTML = `
         <h2>${data.name}</h2>
         <img src="${spriteUrl}" alt="${data.name}">
         <p>Height: ${data.height}</p>
