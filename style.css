@@ -1,0 +1,28 @@
+body{
+    background-color: black;
+    color: yellow;
+}
+#container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#pokemonName{
+    padding: 10px 20px;
+}
+
+#button {
+    background-color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50%; 
+    transition: background-color 0.3s ease, border-radius 0.5s ease;
+}
+
+#button:hover {
+    background-color: red;
+    border-radius: 0%; 
+}
+
+
