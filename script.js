@@ -58,7 +58,7 @@ window.onload = (event) => {
     const titelWeb = document.getElementById("titelWebsite");
 
     titelWeb.innerHTML =`
-    <h1>Welkom op Search you favoriete pokemon ${myData}</h1>
+    <h1>Welkom op Search you favoriete pokemon ${myData}!!</h1>
     `
 
 
