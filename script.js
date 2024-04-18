@@ -8,15 +8,19 @@ window.onload = (event) => {
   let name = localStorage.getItem("name");
   let age = localStorage.getItem("age");
 
-  
-  if (!name || !age) {
+  while(!name || !age){
+
+    
       name = prompt("Geef een naam in");
       age = prompt("Geef u leeftijd");
+ 
+   
 
-      
-      localStorage.setItem("name", name);
-      localStorage.setItem("age", age);
   }
+  
+ 
+  localStorage.setItem("name", name);
+  localStorage.setItem("age", age);
 
 
   var myData = localStorage.getItem("name");
